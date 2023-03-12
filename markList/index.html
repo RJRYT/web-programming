@@ -29,7 +29,41 @@
         header {
             color: blue;
         }
-        
+
+        .head-table {
+            margin-top: 30px;
+        }
+
+        .head-row {
+            padding: 15px;
+            text-align: left;
+        }
+
+        .main-table {
+            padding: 50px;
+            margin: 50px;
+        }
+        .main-row {
+            border: 2px solid rgb(187, 19, 238);
+        }
+        .main-row:hover {
+            border: 3px solid rgb(123, 4, 160);
+            font-weight: bold;
+        }
+        .main-col {
+            margin-left: 5px;
+            margin-right: 5px;
+            padding-left: 5px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            background-color: rgb(228, 250, 215);
+            border: 2px solid rgb(52, 102, 91);
+            text-align: center;
+        }
+        .name {
+            text-align: left;
+            padding-right: 35px;
+        }
     </style>
 </head>
 
@@ -45,8 +79,98 @@
     </header>
 
     <main>
-        <h1><center>Christ Nagar College</center></h1>
-          
+        <center>
+            <table class="head-table">
+                <tr>
+                    <td class="head-row"><b>Subject:</b> Web Programming</td>
+                    <td class="head-row"><b>Semester:</b> 4 th</td>
+                </tr>
+                <tr>
+                    <td class="head-row"><b>Teacher:</b> Deepthi Rani</td>
+                    <td class="head-row"><b>Class:</b> BCA</td>
+                </tr>
+            </table>
+            <table class="main-table">
+                <tr class="main-row">
+                    <th class="main-col">No.</th>
+                    <th class="main-col name">Student Name</th>
+                    <th class="main-col">Mark</th>
+                    <th class="main-col">Percentage</th>
+                    <th class="main-col">Grade</th>
+                </tr>
+                <tr class="main-row">
+                    <td class="main-col">1</td>
+                    <td class="main-col name">Hanna Arnolds</td>
+                    <td class="main-col">98</td>
+                    <td class="main-col">98%</td>
+                    <td class="main-col">A+</td>
+                </tr>
+                <tr class="main-row">
+                    <td class="main-col">2</td>
+                    <td class="main-col name">Jessica Nelson</td>
+                    <td class="main-col">95</td>
+                    <td class="main-col">95%</td>
+                    <td class="main-col">A</td>
+                </tr>
+                <tr class="main-row">
+                    <td class="main-col">3</td>
+                    <td class="main-col name">Jennie Thirwall</td>
+                    <td class="main-col">89</td>
+                    <td class="main-col">89%</td>
+                    <td class="main-col">B+</td>
+                </tr>
+                <tr class="main-row">
+                    <td class="main-col">4</td>
+                    <td class="main-col name">Anne Edwards</td>
+                    <td class="main-col">99</td>
+                    <td class="main-col">99%</td>
+                    <td class="main-col">A+</td>
+                </tr>
+                <tr class="main-row">
+                    <td class="main-col">5</td>
+                    <td class="main-col name">Harry Jones</td>
+                    <td class="main-col">100</td>
+                    <td class="main-col">100%</td>
+                    <td class="main-col">A+</td>
+                </tr>
+                <tr class="main-row">
+                    <td class="main-col">6</td>
+                    <td class="main-col name">Michelle Harvard</td>
+                    <td class="main-col">84</td>
+                    <td class="main-col">84%</td>
+                    <td class="main-col">B</td>
+                </tr>
+                <tr class="main-row">
+                    <td class="main-col">7</td>
+                    <td class="main-col name">Casey Jordan</td>
+                    <td class="main-col">96</td>
+                    <td class="main-col">96%</td>
+                    <td class="main-col">A</td>
+                </tr>
+                <tr class="main-row">
+                    <td class="main-col">8</td>
+                    <td class="main-col name">Kelly Baynes</td>
+                    <td class="main-col">94</td>
+                    <td class="main-col">94%</td>
+                    <td class="main-col">A</td>
+                </tr>
+                <tr class="main-row">
+                    <td class="main-col">9</td>
+                    <td class="main-col name">Jason Hawthorne</td>
+                    <td class="main-col">97</td>
+                    <td class="main-col">97%</td>
+                    <td class="main-col">A+</td>
+                </tr>
+                <tr class="main-row">
+                    <td class="main-col">10</td>
+                    <td class="main-col name">Kim Garner</td>
+                    <td class="main-col">88</td>
+                    <td class="main-col">88%</td>
+                    <td class="main-col">B+</td>
+                </tr>
+            </table>
+        </center>
+
     </main>
 
     <footer class="text-center py-4">
@@ -59,7 +183,7 @@
                     <ul class="list-inline my-2">
                         <li class="list-inline-item me-4">
                             <div class="bs-icon-circle bs-icon-primary bs-icon">
-                                <a href="https://www.instagram.com/rjryt_/">
+                                <a class="link-secondary" href="https://www.instagram.com/rjryt_/">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
                                         viewBox="0 0 16 16" class="bi bi-instagram">
                                         <path
@@ -72,7 +196,7 @@
                         <li class="list-inline-item me-4">
 
                             <div class="bs-icon-circle bs-icon-primary bs-icon">
-                                <a href="https://rjryt.tech/">
+                                <a class="link-secondary" href="https://rjryt.tech/">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-globe" viewBox="0 0 16 16">
                                         <path
@@ -83,7 +207,7 @@
                         </li>
                         <li class="list-inline-item">
                             <div class="bs-icon-circle bs-icon-primary bs-icon">
-                                <a href="https://rjryt.tech/r/codroid">
+                                <a class="link-secondary" href="https://rjryt.tech/r/codroid">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-discord" viewBox="0 0 16 16">
                                         <path
@@ -96,7 +220,8 @@
                 </div>
                 <div class="col">
                     <ul class="list-inline my-2">
-                        <li class="list-inline-item"><a class="link-secondary" href="../index.html">Goto Selector</a></li>
+                        <li class="list-inline-item"><a class="link-secondary" href="../index.html">Goto Selector</a>
+                        </li>
                     </ul>
                 </div>
             </div>
