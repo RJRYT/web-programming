@@ -29,6 +29,7 @@
         header {
             color: rgb(12, 12, 14);
         }
+
         .nav {
             margin-left: 25px;
             margin-right: 25px;
@@ -48,14 +49,14 @@
             border-bottom: 2px solid rgb(34, 54, 235);
             border-radius: 7px;
             font-weight: bold;
-            text-shadow:2px 2px 5px #101010;
+            text-shadow: 2px 2px 5px #101010;
         }
 
         .active {
             border-top: 2px solid rgb(41, 141, 235);
             background-color: #27f3f3;
             border-radius: 7px;
-        } 
+        }
 
         .nav p {
             padding-top: 10px;
@@ -66,7 +67,7 @@
         .nav p:hover {
             text-decoration: underline;
             font-size: 17px;
-            text-shadow:2px 2px 5px #101010;
+            text-shadow: 2px 2px 5px #101010;
         }
 
         .nav-logo {
@@ -83,6 +84,26 @@
             margin-top: 8px;
         }
 
+        table {
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid rgb(23, 55, 238);
+            border-radius: 5px;
+            padding-left: 10px;
+        }
+
+        th:hover, td:hover {
+            border: 2px solid rgb(67, 93, 241);
+            padding-left: 15px;
+        }
+        .download:hover {
+            text-decoration: none;
+            text-shadow: 1px 2px 25px #df9090;
+            font-style: italic;
+            font-weight: bold;
+        }
+
     </style>
 </head>
 
@@ -97,12 +118,84 @@
             <a class="nav-link link-secondary" href="dept.html">Departments</a>
             <a class="nav-link link-secondary" href="courses.html">Courses</a>
             <a class="nav-link link-secondary active" href="?">Downloads</a>
-          </nav>
+        </nav>
     </header>
 
     <main class="home">
-        <h3 class="head text-secondary"><center>Welcome to Christ Nagar College</center></h3>
-        <h4 class="text-secondary"><center>Downloads Page</center></h4>
+        <h3 class="head text-secondary">
+            <center>Welcome to Christ Nagar College</center>
+        </h3>
+        <h4 class="text-secondary">
+            <center><u>Downloads Page</u></center>
+        </h4>
+        <h4 class="text-secondary">
+            <center>Previous Year Question Papers</center>
+        </h4>
+        <table>
+            <tr>
+                <th>No</th>
+                <th>Program</th>
+                <th>Year</th>
+                <th>Subject</th>
+                <th>Direct Link</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>First Semester BCA</td>
+                <td>2018</td>
+                <td>Digital Electronics</td>
+                <td><a class="link-secondary download" href="assets/2018(2)(13).pdf">Download</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Second Semester BCA</td>
+                <td>2018</td>
+                <td>Environmental Studies</td>
+                <td><a class="link-secondary download" href="assets/2018(110).pdf">Download</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Second Semester BCA</td>
+                <td>2019</td>
+                <td>Environmental Studies</td>
+                <td><a class="link-secondary download" href="assets/2019(1)(26).pdf">Download</a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Second Semester BCA</td>
+                <td>2020</td>
+                <td>Environmental Studies</td>
+                <td><a class="link-secondary download" href="assets/2020(4).pdf">Download</a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Second Semester BCA</td>
+                <td>2021</td>
+                <td>Data Structure</td>
+                <td><a class="link-secondary download" href="assets/2021 - 1(105).pdf">Download</a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Second Semester BCA</td>
+                <td>2021</td>
+                <td>Environmental Studies</td>
+                <td><a class="link-secondary download" href="assets/2021 - 3(3).pdf">Download</a></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Second Semester B.Sc</td>
+                <td>2018</td>
+                <td>Data Structure</td>
+                <td><a class="link-secondary download" href="assets/DS Uty QUESTIONS.pdf">Download</a></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Second Semester BCA</td>
+                <td>2020</td>
+                <td>Data Structure</td>
+                <td><a class="link-secondary download" href="assets/DS uty questions2.pdf">Download</a></td>
+            </tr>
+        </table>
     </main>
     <hr>
     <footer class="text-center py-4">
@@ -152,7 +245,8 @@
                 </div>
                 <div class="col">
                     <ul class="list-inline my-2">
-                        <li class="list-inline-item"><a class="link-secondary" href="../index.html">Goto Selector</a></li>
+                        <li class="list-inline-item"><a class="link-secondary" href="../index.html">Goto Selector</a>
+                        </li>
                     </ul>
                 </div>
             </div>
