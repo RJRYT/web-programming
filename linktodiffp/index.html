@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Section links</title>
+
+	<style>
+		body {
+			width: 100vw;
+			height: 100vh;
+		}
+
+		.section {
+			display: flex;
+			width: 100vw;
+			height: 40vh;
+			background-color: #151564;
+			font-size: 50px;
+			color: aqua;
+			text-align: center;
+			margin: 10px 5px;
+		}
+
+		.nav {
+			width: 100vw;
+			height: 40vh;
+			background-color: #151564;
+			font-size: x-large;
+			color: aqua;
+			text-align: center;
+			margin: 10px 5px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			place-items: center;
+		}
+
+		.btn {
+			color: aqua;
+			background-color: #151564;
+			height: 40px;
+			width: 90px;
+			padding: 2px;
+			border: 2px solid aqua;
+			border-radius: 20px;
+			text-decoration: none;
+			margin-top: 50px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="nav">
+		<h1 style=" place-items: center;">SAME PAGE LINKING</h1>
+		<a href="#section1" class="btn">SEC-1</a>
+		<a href="#section2" class="btn">SEC-2</a>
+	</div>
+	<div class="section one" id="section1">
+		section 1
+	</div>
+	<div class="section two" id="section2">
+		section 2
+	</div>
+	<!-- Add this at the bottom of your <body> tag -->
+
+</body>
+
+</html>

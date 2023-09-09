@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+
+<body>
+    <center>
+
+        <h1>Factorial</h1>
+        Enter a number: <input type="number" name="number" id="number">
+        <br><br><button onclick="fact()" type="button">Calculate</button>
+        <p id="result"></p>
+    </center>
+    <script>
+        const fact = () => {
+            let numb = document.getElementById('number').value;
+            let f = 1;
+            for (let i = 2; i <= numb; ++i) {
+                f *= i;
+            }
+            document.getElementById('result').innerHTML = 'The factorial fo number ' + numb + ' is ' + f;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swap two numbers</title>
+</head>
+
+<body>
+    <center>
+        <h1>Swap two numbers</h1>
+        Enter first number: <input type="number" name="num1" id="number1"><br>
+        Enter second number: <input type="number" name="num2" id="number2"><br>
+        <button onclick="swapnum()" type="button">Swap</button>
+        <p id="result1"></p>
+        <p id="result2"></p>
+    </center>
+    <script>
+        function swapnum() {
+            let num1 = document.getElementById("number1").value;
+            let num2 = document.getElementById('number2').value;
+            const result1 = document.getElementById('result1');
+            const result2 = document.getElementById('result2');
+            result1.innerHTML = `Before swap: First number: ${num1}, Second number: ${num2}`;
+            let __T = num1;
+            num1 = num2;
+            num2 = __T;
+            result2.innerHTML = `After swap: First number: ${num1}, Second number: ${num2}`;
+        }
+    </script>
+</body>
+
+</html>

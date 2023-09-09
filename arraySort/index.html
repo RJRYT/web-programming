@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array sorting</title>
+</head>
+<body>
+    <center>
+        <h1>Array sorting</h1>
+        Enter a array: <input type="text" name="array" id="array"><br>
+        <button onclick="sortarr()" type="button">sort</button>
+        <p id="result"></p>
+    </center>
+    <script>
+        function sortarr() {
+            let arr = document.getElementById('array').value.split(',');
+            arr.sort((a, b)=>a-b);
+            document.getElementById('result').innerHTML = `The sorted array: ${arr.join(',')}`;
+        }
+    </script>
+</body>
+</html>

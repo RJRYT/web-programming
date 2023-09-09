@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum Of Digit</title>
+</head>
+<body>
+    <center>
+        <h1>Sum of digits</h1>
+        Enter a number: <input type="number" name="number" id="number">
+        <button onclick="findsum()" type="button">Check</button>
+        <p id="result"></p>
+    </center>
+    <script>
+        function findsum(){
+            let num = document.getElementById("number").value;
+            let numBak = num;
+            let sum = 0;
+            while(numBak>0){
+                sum += numBak%10;
+                numBak = Math.floor(numBak/10);
+            }
+            document.getElementById('result').innerHTML = `The sum of digits of number ${num} is ${sum}`;
+        }
+    </script>
+</body>
+</html>

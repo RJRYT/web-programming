@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript events</title>
+</head>
+<body>
+    <center>
+        <h1> Javascript Event</h1>
+        <input onclick="clickevent()" type="button" value="Click Me">
+        <h4 id="result"></h4>
+    </center>
+    <script>
+        function clickevent(){
+            document.getElementById('result').innerHTML = 'button clicked'
+        }
+    </script>
+</body>
+</html>

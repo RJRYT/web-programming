@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Media Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #15194b;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color:  #15194b;
+            color: aqua;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #15194b;
+            color: aqua;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .media {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .media-item {
+            flex-basis: calc(33.33% - 10px);
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .media-item img {
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .media-item img:hover {
+            transform: scale(1.1);
+        }
+
+        .media-item video {
+            width: 50%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sports Media Page</h1>
+        <p>The Heartbeat of the Game: Stay Tuned for Sports Updates.</p>
+    </header>
+
+    <div class="container">
+
+        <h2>Related Videos</h2>
+        <div class="media-item">
+            <video controls>
+                <source src="v1.mp4" type="video/mp4">
+            </video>
+        </div>
+        
+    </div>
+</body></html>

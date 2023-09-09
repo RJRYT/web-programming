@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        error {
+            color: red;
+            font-size: 14px;
+        }
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(62, 62, 146);">
+    <h1>Login</h1>
+    <form id="myForm">
+
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <p id="error-message" class="error"></p>
+
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function (event) {
+            // Prevent the form from submitting
+            event.preventDefault();
+
+            // Get form input values
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            const errorMessage = document.getElementById("error-message");
+
+            // Simple validation checks
+            if (email === "" || password === "") {
+                errorMessage.textContent = "All fields are required.";
+            } else if (!isValidEmail(email)) {
+                errorMessage.textContent = "Please enter a valid email address.";
+            } else {
+                // Form is valid, you can submit it or perform other actions here
+                errorMessage.textContent = "";
+                alert("Form submitted successfully!");
+            }
+        });
+
+        function isValidEmail(email) {
+            // Simple email validation using a regular expression
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+    </script>
+</body>
+
+</html>
